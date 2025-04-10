@@ -1,3 +1,24 @@
+CREATE TABLE IF NOT EXISTS course_attendance_staging (
+    course STRING,
+    instructor STRING,
+    name STRING,
+    email_id STRING,
+    member_id STRING,
+    classes_attended STRING,
+    classes_absent STRING,
+    avg_attendance_pct STRING
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+    "separatorChar" = ",",
+    "quoteChar" = "\"",
+    "skip.header.line.count" = "1"
+)
+STORED AS TEXTFILE;
+
+LOAD DATA INPATH '/user/hive/warehouse/mydata/Course_Attendance.csv'
+INTO TABLE course_attendance_staging;
+
 CREATE TABLE IF NOT EXISTS course_attendance (
     course STRING,
     instructor STRING,
@@ -7,10 +28,21 @@ CREATE TABLE IF NOT EXISTS course_attendance (
     classes_attended INT,
     classes_absent INT,
     avg_attendance_pct FLOAT
-)
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-STORED AS TEXTFILE;
+);
+
+ALTER TABLE course_attendance SET TBLPROPERTIES ("skip.header.line.count"="1");
+
+INSERT INTO TABLE course_attendance
+SELECT
+    course,
+    instructor,
+    name,
+    email_id,
+    member_id,
+    CAST(classes_attended AS INT),
+    CAST(classes_absent AS INT),
+    CAST(REPLACE(avg_attendance_pct, '%', '') AS FLOAT)
+FROM course_attendance_staging;
 
 CREATE TABLE IF NOT EXISTS enrollment_data (
     serial_no INT,
@@ -27,8 +59,12 @@ CREATE TABLE IF NOT EXISTS enrollment_data (
     enrollment_date STRING,
     primary_faculty STRING
 )
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+    "separatorChar" = ",",
+    "quoteChar" = "\"",
+    "skip.header.line.count" = "1"
+)
 STORED AS TEXTFILE;
 
 CREATE TABLE IF NOT EXISTS grade_roster (
@@ -50,8 +86,12 @@ CREATE TABLE IF NOT EXISTS grade_roster (
     out_of_grade STRING,
     exam_result STRING
 )
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+    "separatorChar" = ",",
+    "quoteChar" = "\"",
+    "skip.header.line.count" = "1"
+)
 STORED AS TEXTFILE;
 
 CREATE TABLE IF NOT EXISTS error_logs (
@@ -64,9 +104,6 @@ CREATE TABLE IF NOT EXISTS error_logs (
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
-
-LOAD DATA INPATH '/user/hive/warehouse/mydata/Course_Attendance.csv' 
-INTO TABLE course_attendance;
 
 LOAD DATA INPATH '/user/hive/warehouse/mydata/Enrollment_Data.csv' 
 INTO TABLE enrollment_data;
@@ -103,3 +140,5 @@ SELECT
   current_timestamp()
 FROM grade_roster
 WHERE student_id IS NULL OR TRIM(student_id) = '';
+
+DROP TABLE course_attendance_staging;

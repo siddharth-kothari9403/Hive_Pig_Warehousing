@@ -60,9 +60,9 @@ SELECT
     current_timestamp()
 FROM enrollment_data ed
 JOIN course_attendance ca 
-    ON ed.student_id = ca.member_id
+    ON ed.student_id = ca.member_id AND ed.student_name = ca.name
 JOIN grade_roster gr
-    ON ed.student_id = gr.student_id AND ed.course = gr.subject_code_name
+    ON ed.student_id = gr.student_id AND ed.course = gr.subject_code_name AND ed.student_name = gr.student_name
 WHERE 
     ed.student_id IS NOT NULL AND ed.course IS NOT NULL;
 
