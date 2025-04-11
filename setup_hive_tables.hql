@@ -67,6 +67,8 @@ WITH SERDEPROPERTIES (
 )
 STORED AS TEXTFILE;
 
+ALTER TABLE enrollment_data SET TBLPROPERTIES ("skip.header.line.count"="1");
+
 CREATE TABLE IF NOT EXISTS grade_roster (
     academy_location STRING,
     student_id STRING,
@@ -93,6 +95,8 @@ WITH SERDEPROPERTIES (
     "skip.header.line.count" = "1"
 )
 STORED AS TEXTFILE;
+
+ALTER TABLE grade_roster SET TBLPROPERTIES ("skip.header.line.count"="1");
 
 CREATE TABLE IF NOT EXISTS error_logs (
     source_table STRING,
