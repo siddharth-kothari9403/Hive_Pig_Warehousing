@@ -16,7 +16,7 @@ WITH SERDEPROPERTIES (
 )
 STORED AS TEXTFILE;
 
-LOAD DATA INPATH '/user/hive/warehouse/mydata/Course_Attendance.csv'
+LOAD DATA INPATH '/user/hive/warehouse/mydata/cleaned_courses.csv'
 INTO TABLE course_attendance_staging;
 
 CREATE TABLE IF NOT EXISTS course_attendance (

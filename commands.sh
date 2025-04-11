@@ -2,7 +2,7 @@ start-dfs.sh
 start-yarn.sh
 
 hdfs dfs -mkdir -p /user/hive/warehouse/mydata
-hdfs dfs -put Course_Attendance.csv /user/hive/warehouse/mydata/
+hdfs dfs -put cleaned_courses.csv /user/hive/warehouse/mydata/
 hdfs dfs -put Enrollment_Data.csv /user/hive/warehouse/mydata/
 hdfs dfs -put GradeRosterReport.csv /user/hive/warehouse/mydata/
 
