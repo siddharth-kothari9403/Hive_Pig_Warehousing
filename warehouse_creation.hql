@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS dw_student_course_summary (
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
     "separatorChar" = ",",
-    "quoteChar" = "\"",
+    "quoteChar" = "\""
 )
 STORED AS TEXTFILE;
 
