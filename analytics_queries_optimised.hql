@@ -44,8 +44,6 @@ WITH attendance_classification AS (
     FROM dw_student_course_optimized
     WHERE avg_attendance_pct IS NOT NULL 
         AND obtained_grade IS NOT NULL
-        AND program in ("Integrated Master of Technology CSE", "Integrated Master of Technology ECE", "Master of Technology CSE", "Master of Technology ECE")
-        AND batch in ("2024-25 IMtech", "2024-25 IMtech ECE", "2023-28 iMtech", "2024-2026 CSE", "2024-2026 ECE")
 )
 SELECT
     attendance_bucket,
