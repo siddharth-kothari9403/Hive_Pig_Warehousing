@@ -1,0 +1,73 @@
++------------------------------------------+-----------------+-----------------+----------------------------+
+|            program_code_name             | obtained_grade  | count_students  | percentage_within_program  |
++------------------------------------------+-----------------+-----------------+----------------------------+
+| B.Tech CSE                               | A               | 57              | 12.00                      |
+| B.Tech CSE                               | A-              | 92              | 19.37                      |
+| B.Tech CSE                               | B               | 80              | 16.84                      |
+| B.Tech CSE                               | B+              | 105             | 22.11                      |
+| B.Tech CSE                               | B-              | 71              | 14.95                      |
+| B.Tech CSE                               | C               | 20              | 4.21                       |
+| B.Tech CSE                               | C+              | 36              | 7.58                       |
+| B.Tech CSE                               | D               | 4               | 0.84                       |
+| B.Tech CSE                               | F               | 10              | 2.11                       |
+| B.Tech Data Science and AI               | A               | 25              | 11.16                      |
+| B.Tech Data Science and AI               | A-              | 22              | 9.82                       |
+| B.Tech Data Science and AI               | B               | 31              | 13.84                      |
+| B.Tech Data Science and AI               | B+              | 42              | 18.75                      |
+| B.Tech Data Science and AI               | B-              | 54              | 24.11                      |
+| B.Tech Data Science and AI               | C               | 14              | 6.25                       |
+| B.Tech Data Science and AI               | C+              | 22              | 9.82                       |
+| B.Tech Data Science and AI               | D               | 10              | 4.46                       |
+| B.Tech Data Science and AI               | F               | 4               | 1.79                       |
+| B.Tech ECE                               | A               | 16              | 11.76                      |
+| B.Tech ECE                               | A-              | 27              | 19.85                      |
+| B.Tech ECE                               | B               | 17              | 12.50                      |
+| B.Tech ECE                               | B+              | 36              | 26.47                      |
+| B.Tech ECE                               | B-              | 19              | 13.97                      |
+| B.Tech ECE                               | C               | 4               | 2.94                       |
+| B.Tech ECE                               | C+              | 16              | 11.76                      |
+| B.Tech ECE                               | D               | 1               | 0.74                       |
+| Doctor of Philosophy                     | C+              | 1               | 100.00                     |
+| Integrated Master of Technology CSE      | A               | 27              | 17.31                      |
+| Integrated Master of Technology CSE      | A-              | 35              | 22.44                      |
+| Integrated Master of Technology CSE      | B               | 23              | 14.74                      |
+| Integrated Master of Technology CSE      | B+              | 33              | 21.15                      |
+| Integrated Master of Technology CSE      | B-              | 11              | 7.05                       |
+| Integrated Master of Technology CSE      | C               | 9               | 5.77                       |
+| Integrated Master of Technology CSE      | C+              | 7               | 4.49                       |
+| Integrated Master of Technology CSE      | D               | 4               | 2.56                       |
+| Integrated Master of Technology CSE      | F               | 7               | 4.49                       |
+| Integrated Master of Technology ECE      | A               | 4               | 4.55                       |
+| Integrated Master of Technology ECE      | A-              | 9               | 10.23                      |
+| Integrated Master of Technology ECE      | B               | 18              | 20.45                      |
+| Integrated Master of Technology ECE      | B+              | 29              | 32.95                      |
+| Integrated Master of Technology ECE      | B-              | 8               | 9.09                       |
+| Integrated Master of Technology ECE      | C               | 7               | 7.95                       |
+| Integrated Master of Technology ECE      | C+              | 13              | 14.77                      |
+| Master of Science By Research            | A               | 6               | 21.43                      |
+| Master of Science By Research            | A-              | 2               | 7.14                       |
+| Master of Science By Research            | B               | 6               | 21.43                      |
+| Master of Science By Research            | B+              | 4               | 14.29                      |
+| Master of Science By Research            | B-              | 3               | 10.71                      |
+| Master of Science By Research            | C               | 4               | 14.29                      |
+| Master of Science By Research            | C+              | 3               | 10.71                      |
+| Master of Science by Research-Part time  | A-              | 1               | 50.00                      |
+| Master of Science by Research-Part time  | B               | 1               | 50.00                      |
+| Master of Technology CSE                 | A               | 73              | 8.46                       |
+| Master of Technology CSE                 | A-              | 133             | 15.41                      |
+| Master of Technology CSE                 | B               | 302             | 34.99                      |
+| Master of Technology CSE                 | B+              | 123             | 14.25                      |
+| Master of Technology CSE                 | B-              | 105             | 12.17                      |
+| Master of Technology CSE                 | C               | 40              | 4.63                       |
+| Master of Technology CSE                 | C+              | 63              | 7.30                       |
+| Master of Technology CSE                 | D               | 11              | 1.27                       |
+| Master of Technology CSE                 | F               | 13              | 1.51                       |
+| Master of Technology ECE                 | A               | 10              | 11.24                      |
+| Master of Technology ECE                 | A-              | 10              | 11.24                      |
+| Master of Technology ECE                 | B               | 23              | 25.84                      |
+| Master of Technology ECE                 | B+              | 21              | 23.60                      |
+| Master of Technology ECE                 | B-              | 15              | 16.85                      |
+| Master of Technology ECE                 | C               | 2               | 2.25                       |
+| Master of Technology ECE                 | C+              | 4               | 4.49                       |
+| Master of Technology ECE                 | F               | 4               | 4.49                       |
++------------------------------------------+-----------------+-----------------+----------------------------+
