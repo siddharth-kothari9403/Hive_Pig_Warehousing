@@ -60,5 +60,3 @@ with_percentage = FOREACH joined_data GENERATE
 
 -- Sort by program, grade, and descending percentage
 sorted = ORDER with_percentage BY program_code_name, obtained_grade, percentage_within_program DESC;
-
-DUMP sorted;

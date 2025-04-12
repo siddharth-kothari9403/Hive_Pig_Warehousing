@@ -68,7 +68,4 @@
 (Master of Technology ECE,C+,4,4.49438202247191)
 (Master of Technology ECE,F,4,4.49438202247191)
 
-Time Taken:
-
-17.24s user 
-4.17s system
+Time Taken: 1 second and 594 milliseconds (1594 ms)

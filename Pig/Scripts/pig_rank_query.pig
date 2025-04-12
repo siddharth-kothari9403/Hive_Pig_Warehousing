@@ -52,6 +52,3 @@ sorted = ORDER aggregated BY avg_attendance_pct DESC;
 
 -- Get top 15
 top15 = LIMIT sorted 15;
-
--- Output the results
-DUMP top15;

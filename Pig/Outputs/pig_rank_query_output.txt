@@ -14,7 +14,4 @@
 (AMS 103 / Calculus,jnair@iiitb.ac.in, malapaka@iiitb.ac.in, classroomsupport@iiitb.ac.in,67,80.20746299402037)
 (AMS 211 / Mathematics-3,keshav.chandak@iiitb.ac.in, m.srinivasan@iiitb.ac.in, adithya.somasalle@iiitb.ac.in, priyanka.das@iiitb.ac.in, aayush.bhargav@iiitb.ac.in, neil.handa@iiitb.ac.in, maturi.raghunadh@iiitb.ac.in,5,79.98000030517578)
 
-Time Taken: 
-real    0m26.004s
-user    0m19.283s
-sys     0m1.234s
+Time Taken: 1 second and 591 milliseconds (1591 ms)

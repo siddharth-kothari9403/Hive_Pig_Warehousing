@@ -43,7 +43,4 @@
 (<60%,D,17)
 (<60%,F,23)
 
-Time Taken:
-real    0m20.504s
-user    0m13.775s
-sys     0m1.027s
+Time Taken: 1 second and 577 milliseconds (1577 ms)

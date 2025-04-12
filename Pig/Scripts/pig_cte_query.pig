@@ -57,6 +57,3 @@ counts = FOREACH grouped GENERATE
 
 -- Sort by attendance_bucket and obtained_grade
 sorted = ORDER counts BY attendance_bucket, obtained_grade;
-
--- Output the results
-DUMP sorted;
