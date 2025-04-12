@@ -9,3 +9,4 @@ hdfs dfs -put GradeRosterReport.csv /user/hive/warehouse/mydata/
 beeline -u jdbc:hive2:// -f ./delete_tables.hql
 beeline -u jdbc:hive2:// -f ./setup_hive_tables.hql
 beeline -u jdbc:hive2:// -f ./warehouse_creation.hql
+beeline -u jdbc:hive2:// -f ./warehouse_creation_optimized.hql
