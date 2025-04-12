@@ -1,0 +1,20 @@
+(COM 827 / Internet of Things,jbapat@iiitb.ac.in,2,97.20000076293945)
+(AIM 608 / Networks and Semantics,sri@iiitb.ac.in,3,88.9000015258789)
+(VLS 864 / Embedded Systems Design,kurian.polachan@iiitb.ac.in,30,88.74000104268391)
+(EGC 112 / Programming 1B (Python Programming),sujitkc@iiitb.ac.in,67,87.62089555654953)
+(EGC 111 / Programming 1A (C Programming),badrinath.r@iiitb.ac.in,60,87.3416674931844)
+(EGC 102 / Digital Design,sridhar.p@iiitb.ac.in, kurian.polachan@iiitb.ac.in,28,86.66428511483329)
+(CSE 731 / Software Testing,meenakshi@iiitb.ac.in,3,86.26666514078777)
+(AMS 101 / Probability & Statistics,a.chattopadhyay@iiitb.ac.in,66,85.91666666666667)
+(HSS 111 / Economics-1,vsridhar@iiitb.ac.in,127,85.73070907592773)
+(CSE 201 / Discrete Mathematics,devendra.nelapati@iiitb.ac.in, kevin.adesara@iiitb.ac.in, siddharth.kothari@iiitb.ac.in, ashish.choudhury@iiitb.ac.in, ketaki.tamhanakar@iiitb.ac.in, dhairya.gupta@iiitb.ac.in,5,83.54000091552734)
+(AIM 841 / Medical Image Analysis with AI,sushree.behera@iiitb.ac.in,4,81.82500076293945)
+(AMS 102 / Probability & Random Process,amrita.mishra@iiitb.ac.in,60,80.83333314259848)
+(EGC 102 / Digital Design,sridhar.p@iiitb.ac.in,67,80.81791003782358)
+(AMS 103 / Calculus,jnair@iiitb.ac.in, malapaka@iiitb.ac.in, classroomsupport@iiitb.ac.in,67,80.20746299402037)
+(AMS 211 / Mathematics-3,keshav.chandak@iiitb.ac.in, m.srinivasan@iiitb.ac.in, adithya.somasalle@iiitb.ac.in, priyanka.das@iiitb.ac.in, aayush.bhargav@iiitb.ac.in, neil.handa@iiitb.ac.in, maturi.raghunadh@iiitb.ac.in,5,79.98000030517578)
+
+Time Taken: 
+real    0m26.004s
+user    0m19.283s
+sys     0m1.234s

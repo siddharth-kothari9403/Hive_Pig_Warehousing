@@ -26,11 +26,8 @@ CREATE TABLE IF NOT EXISTS dw_student_course_summary (
     academy_location STRING,
     load_timestamp TIMESTAMP
 )
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
-WITH SERDEPROPERTIES (
-    "separatorChar" = ",",
-    "quoteChar" = "\""
-)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE;
 
 INSERT INTO TABLE dw_student_course_summary

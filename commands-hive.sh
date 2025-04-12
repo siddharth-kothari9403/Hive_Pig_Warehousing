@@ -10,3 +10,5 @@ beeline -u jdbc:hive2:// -f ./delete_tables.hql
 beeline -u jdbc:hive2:// -f ./setup_hive_tables.hql
 beeline -u jdbc:hive2:// -f ./warehouse_creation.hql
 beeline -u jdbc:hive2:// -f ./warehouse_creation_optimized.hql
+
+beeline -u jdbc:hive2:// --outputformat=tsv2 -e "SELECT * FROM dw_student_course_summary" > dw_student_course_summary.tsv

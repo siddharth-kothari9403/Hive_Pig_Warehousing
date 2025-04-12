@@ -25,11 +25,8 @@ CREATE TABLE dw_student_course_optimized (
 )
 PARTITIONED BY (program STRING, batch STRING, period STRING)
 CLUSTERED BY (student_id) INTO 8 BUCKETS
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
-WITH SERDEPROPERTIES (
-    "separatorChar" = ",",
-    "quoteChar" = "\""
-)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
 STORED AS TEXTFILE;
 
 SET hive.enforce.bucketing = true;
